@@ -1,0 +1,8 @@
+[build]
+  # A local Windows deploy must not unlink native modules held by a running dev server.
+  # Fresh Netlify builds still install the separate playground workspace from its lockfile.
+  command = 'node scripts/ensure-playground-deps.mjs && npm run build'
+  publish = "dist"
+
+# Route rewrites live in public/_redirects, copied into dist by Vite.
+# Do not use a global SPA fallback: missing /demos/* must remain real 404s.

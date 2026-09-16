@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm --prefix G:\\\\Worklabs\\\\playground install motion lucide-react)"
+    ]
+  }
+}

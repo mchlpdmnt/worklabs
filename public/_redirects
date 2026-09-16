@@ -1,0 +1,7 @@
+# Rewrite only registry routes, never the exported demos or missing assets.
+/components       /index.html  200
+/components/*     /index.html  200
+/templates        /index.html  200
+/templates/       /index.html  200
+/about            /index.html  200
+/about/           /index.html  200

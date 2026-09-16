@@ -1,0 +1,10 @@
+{
+  "name": "worklabs",
+  "private": true,
+  "workspaces": [
+    "playground"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace playground --"
+  }
+}
